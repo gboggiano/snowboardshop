@@ -1,0 +1,12 @@
+.card-container {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #35373c;
+  color: #cacaca;
+  border-radius: 10px;
+  box-shadow: beige;
+  box-shadow: 10px 5px 5px lightslategray;
+  margin: 1%;
+}

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import Cards from "../cards/Cards";
+import Cards from "../Cards/Cards";
 
 export default function MainCardsli() {
-  const items = [
+  const [items, setItems] = useState([
     {
       title: "Snowboard table",
       brand: "Santa Cruz",
@@ -28,11 +28,14 @@ export default function MainCardsli() {
       description:
         "A lightweight and low-profile design inspired by the classic skate-style helmet. The MOD1 is available in three fits (standard, Asian, and youth) and delivers simplicity with premium functionality for wherever your on-mountain adventures take you. ",
     },
-  ];
+  ]);
 
   return (
     <div className="card-container_flex">
       <Cards />
+      {items.map((elem) => {
+        return <Cards title={elem.title} />;
+      })}
     </div>
   );
 }
