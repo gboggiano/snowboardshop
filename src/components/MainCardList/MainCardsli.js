@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import Cards from "../Cards/Cards";
+import Cards from "../Cards-comp/Cards";
 
 export default function MainCardsli() {
   const [items, setItems] = useState([
