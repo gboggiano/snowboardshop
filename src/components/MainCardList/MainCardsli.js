@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import Cards from "../Cards-comp/Cards";
+import Buttonone from "../Button-one/Buttonone";
 
 export default function MainCardsli() {
   const [items, setItems] = useState([
@@ -30,12 +31,30 @@ export default function MainCardsli() {
     },
   ]);
 
+  const [dark, setLight] = useState(true);
+  const modeON = () => {
+    setLight(!dark);
+  };
+
   return (
-    <div className="card-container_flex">
-      <Cards />
+    <div
+      className="card-container_flex"
+      style={
+        dark ? { backgroundColor: "#566480" } : { backgroundColor: "white" }
+      }
+    >
       {items.map((elem) => {
-        return <Cards title={elem.title} />;
+        return (
+          <Cards
+            title={elem.title}
+            brand={elem.brand}
+            price={elem.price}
+            category={elem.category}
+            description={elem.description}
+          />
+        );
       })}
+      <Buttonone title="Background Light/Dark mode" funcion={modeON} />
     </div>
   );
 }

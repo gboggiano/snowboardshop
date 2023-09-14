@@ -1,14 +1,14 @@
 import React from "react";
 import "./style.css";
 
-export default function Cards({ title }) {
+export default function Cards({ title, brand, price, category, description }) {
   return (
     <div className="card-container">
       <h2>{title}</h2>
-      <h4>Brand</h4>
-      <h4>Price</h4>
-      <h4>Category</h4>
-      <h4>Description</h4>
+      <p>{brand}</p>
+      <p>{price}</p>
+      <p>{category}</p>
+      <p>{description}</p>
     </div>
   );
 }
