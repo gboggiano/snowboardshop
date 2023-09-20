@@ -1,0 +1,7 @@
+.Buttonbox {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 10%;
+  padding: 15px;
+}
