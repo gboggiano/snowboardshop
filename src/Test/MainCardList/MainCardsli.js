@@ -43,9 +43,10 @@ export default function MainCardsli() {
         dark ? { backgroundColor: "#566480" } : { backgroundColor: "white" }
       }
     >
-      {items.map((elem) => {
+      {items.map((elem, index) => {
         return (
           <Cards
+            key={index}
             title={elem.title}
             brand={elem.brand}
             price={elem.price}

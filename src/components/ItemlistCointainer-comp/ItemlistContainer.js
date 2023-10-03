@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css";
 
-export default function ItemlistContainer({ message, messageAlt }) {
+export default function ItemlistContainer({ message }) {
   return (
     <div className="welcomemessagestyles">
-      <h2>{message}</h2>
-      <h2>{messageAlt}</h2>
+      <section className="welcomemessagebox">
+        <h2>{message}</h2>
+      </section>
     </div>
   );
 }

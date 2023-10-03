@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 import CartWidget from "../CartWidget-comp/CartWidget";
+import { Link } from "react-router-dom";
+import imglogo from "../../Assets/snlogo.jpeg";
 
 export default function Navbar() {
   return (
@@ -8,17 +10,25 @@ export default function Navbar() {
       <div className="navbarcontainer">
         <nav className="navbarbox">
           <section className="navbarlogo">
-            <h1>Snowster Online Store</h1>
+            <img className="imgbrand" src={imglogo} />
+            <h1 className="custombrandname">Snowster Online Store</h1>
           </section>
           <section className="navbarmenu">
             <ul>
-              <li className="btn btn-outline-dark customlink">Home</li>
-              <li className="btn btn-outline-dark customlink">
+              <Link link to={"/cardsapi"}>
+                <button className="btn btn-outline-dark customlink">
+                  Home
+                </button>
+              </Link>
+
+              <button className="btn btn-outline-dark customlink">
                 Snowboard Tables
-              </li>
-              <li className="btn btn-outline-dark customlink">Gear</li>
-              <li className="btn btn-outline-dark customlink">Clothes</li>
-              <li className="btn btn-outline-dark customlink">About</li>
+              </button>
+              <button className="btn btn-outline-dark customlink">Gear</button>
+              <button className="btn btn-outline-dark customlink">
+                Clothes
+              </button>
+              <button className="btn btn-outline-dark customlink">About</button>
             </ul>
           </section>
           <section className="cartWidgetfromCart">

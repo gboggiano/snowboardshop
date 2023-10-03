@@ -14,24 +14,38 @@
 
 .navbarlogo {
   display: flex;
-  color: #cacaca;
+  width: 25%;
+  color: black;
+  align-items: center;
+  box-shadow: 4px 8px 9px rgb(69, 67, 67);
+  border-radius: 30px;
+  background: linear-gradient(to right, #1c162c, #176b87);
+  border: outset;
+  border-width: 2px;
+  border-color: darkcyan;
 }
 
 .navbarmenu {
   display: flex;
-  align-items: last baseline;
+}
+
+.custombrandname {
+  color: #cacaca;
+  margin-left: 5%;
 }
 
 ul {
   list-style-type: none;
   display: flex;
   gap: 15px;
-  height: auto;
+  align-items: center;
+  align-content: center;
 }
 
 .customlink {
   box-shadow: 5px 5px 5px rgb(69, 67, 67);
   font-weight: bold;
+  height: 55px;
 }
 
 .cartWidgetfromCart {

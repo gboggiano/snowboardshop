@@ -1,6 +1,23 @@
 .welcomemessagestyles {
+  display: flex;
   color: #cacaca;
-  text-align: center;
   font-size: larger;
   padding: 30px;
+}
+
+.welcomemessagebox {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  padding: 35px;
+  border-radius: 30px;
+  background-color: #419197;
+  box-shadow: 1px 2px 3px #78d6c6;
+}
+
+.imgbrand {
+  width: 20%;
+  height: 100%;
+  border-radius: 25%;
 }

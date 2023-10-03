@@ -1,4 +1,12 @@
+.cartWidgetfromCart {
+  align-self: center;
+}
+
 .Cartbox {
   display: flex;
   color: blue;
+}
+
+.customwidgetcar {
+  align-self: pink;
 }
