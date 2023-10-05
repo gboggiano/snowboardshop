@@ -1,0 +1,13 @@
+.cardscontainer {
+  width: 25%;
+  height: 500px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #35373c;
+  color: #cacaca;
+  border-radius: 10px;
+  box-shadow: beige;
+  box-shadow: 10px 5px 5px lightslategray;
+  box-sizing: border-box;
+}

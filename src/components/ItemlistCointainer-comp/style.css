@@ -3,6 +3,7 @@
   color: #cacaca;
   font-size: larger;
   padding: 30px;
+  flex-direction: column;
 }
 
 .welcomemessagebox {
@@ -21,3 +22,12 @@
   height: 100%;
   border-radius: 25%;
 }
+
+/* .customcategory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5%;
+} */

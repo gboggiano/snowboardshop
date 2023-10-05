@@ -9,26 +9,32 @@ export default function Navbar() {
     <>
       <div className="navbarcontainer">
         <nav className="navbarbox">
-          <section className="navbarlogo">
-            <img className="imgbrand" src={imglogo} />
-            <h1 className="custombrandname">Snowster Online Store</h1>
-          </section>
+          <Link className="customlinkbrand" link to={"/"}>
+            <section className="navbarlogo">
+              <img className="imgbrand" src={imglogo} />
+              <h1 className="custombrandname">Snowster Online Store</h1>
+            </section>
+          </Link>
           <section className="navbarmenu">
             <ul>
-              <Link link to={"/cardsapi"}>
+              <Link link to={"/"}>
                 <button className="btn btn-outline-dark customlink">
                   Home
                 </button>
               </Link>
 
               <button className="btn btn-outline-dark customlink">
-                Snowboard Tables
+                Snowboards
               </button>
               <button className="btn btn-outline-dark customlink">Gear</button>
               <button className="btn btn-outline-dark customlink">
                 Clothes
               </button>
-              <button className="btn btn-outline-dark customlink">About</button>
+              <Link link to={"/cardsapi"}>
+                <button className="btn btn-outline-dark customlink">
+                  About Rick and Morty(Api Test)
+                </button>
+              </Link>
             </ul>
           </section>
           <section className="cartWidgetfromCart">

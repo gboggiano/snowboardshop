@@ -14,7 +14,6 @@
 
 .navbarlogo {
   display: flex;
-  width: 25%;
   color: black;
   align-items: center;
   box-shadow: 4px 8px 9px rgb(69, 67, 67);
@@ -23,6 +22,10 @@
   border: outset;
   border-width: 2px;
   border-color: darkcyan;
+}
+
+.customlinkbrand {
+  text-decoration: none;
 }
 
 .navbarmenu {
@@ -45,7 +48,7 @@ ul {
 .customlink {
   box-shadow: 5px 5px 5px rgb(69, 67, 67);
   font-weight: bold;
-  height: 55px;
+  height: auto;
 }
 
 .cartWidgetfromCart {

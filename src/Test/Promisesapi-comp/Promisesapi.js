@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Apicards from "../Apicards-comp/Apicards";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 export default function Promisesapi() {
   //   const [dark, setLight] = useState(true);
@@ -15,9 +16,7 @@ export default function Promisesapi() {
   //-  1 primero copiamos o hacemos el fetch :
 
   const llamada = () => {
-    fetch(
-      "https://rickandmortyapi.com/api/character?page=1&name=rick&status=alive"
-    )
+    fetch("https://rickandmortyapi.com/api/character?page=1")
       .then((res) => res.json())
       .then((respuesta) => setPersonajes(respuesta.results)) // 2 aqui quiero guardarlo en mi estado en vez de un console.log, si voy a la consola veré los objetos info y results, yo lo que quiero es usar resolts para eso usamos respuesta.results, una vez confirmado que trae lo que quiero ahora le seteo el status con setPersonajes ** paso numero 4
       .catch((err) => console.log("Error", err));
@@ -41,6 +40,9 @@ export default function Promisesapi() {
       //     dark ? { backgroundColor: "#566480" } : { backgroundColor: "white" }
       //   }
     >
+      <Link to={"/rmcharacters/Rick"}>
+        <button>How many Ricks are?</button>
+      </Link>
       {personajes.map((elem) => {
         return <Apicards producto={elem} key={elem.id} />;
       })}
