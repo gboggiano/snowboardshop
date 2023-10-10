@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Snowboards",
+      "image": "https://img.freepik.com/vector-gratis/vector-conjunto-tablas-snowboard-blanco-patrones-fijaciones-vista-frontal-trasera-aislada-sobre-fondo-blanco_1284-46671.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Gear",
+      "image": "https://img.freepik.com/foto-gratis/mujer-traje-snowboard-deportista-montana-tabla-snowboard-manos-horizonte-concepto-deportes_1157-46353.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Helmet",
+      "image": "https://img.freepik.com/free-photo/ski-helmet-with-visor-isolated-white-background-modern-grey-ski-helmet-with-sun-visor-isolated-white-winter-sports-helmet_256259-1965.jpg"
+    }
+  ]
+}
