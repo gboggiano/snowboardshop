@@ -1,0 +1,46 @@
+{
+  "items2": [
+    {
+      "id": 1,
+      "title": "YTH BANANA BLASTER SNOWBOARD",
+      "brand": "LIB TECH",
+      "price": "349 USD",
+      "image": "https://www.zerogchamonix.com/38595-large_default/lib-tech-yth-banana-blaster-snowboard-kids-snowboards-22sn052-3-42894.jpg"
+    },
+    {
+      "id": 2,
+      "title": "GROM SNOWBOARD",
+      "brand": "BURTON",
+      "price": "200 USD",
+      "image": "https://www.zerogchamonix.com/38468-large_default/burton-grom-snowboard-kids-snowboards-23599100-3-43208.jpg"
+    },
+    {
+      "id": 3,
+      "title": "SNOWSKATE JIB",
+      "brand": "AMBITION",
+      "price": "149 USD",
+      "image": "https://www.zerogchamonix.com/38034-large_default/ambition-snowskate-jib-powsurfs-snowskates-ambss031-ambss032-ambss033-ambss.jpg"
+    },
+    {
+      "id": 4,
+      "title": "STRATOS SNOWBOARD",
+      "brand": "JONES SNOWBOARDS",
+      "price": "499 USD",
+      "image": "https://www.zerogchamonix.com/37427-thickbox_default/jones-snowboards-stratos-snowboard-mens-snowboards-j22snmstr-j21snmstr-3-41.jpg"
+    },
+    {
+      "id": 5,
+      "title": "WOMEN'S FLAGSHIP SNOWBOARD",
+      "brand": "JONES SNOWBOARDS",
+      "price": "729 USD",
+      "image": "https://www.zerogchamonix.com/37078-thickbox_default/jones-snowboards-womens-flagship-snowboard-womans-snowboards-j23snwwfl-3-41691.jpg"
+    },
+    {
+      "id": 6,
+      "title": "ULTRA FLAGSHIP SNOWBOARD",
+      "brand": "JONES SNOWBOARDS",
+      "price": "839 USD",
+      "image": "https://www.zerogchamonix.com/37069-large_default/jones-snowboards-ultra-flagship-snowboard-mens-snowboards-j23snmufl-3-41685.jpg"
+    }
+  ]
+}

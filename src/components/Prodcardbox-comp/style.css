@@ -1,34 +1,40 @@
-.cardscontainer {
+.snowcardscontainer {
   width: 25%;
   height: auto;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   background: linear-gradient(to right, #049790, #ca7d24);
   color: #cacaca;
   border-radius: 10px;
-  box-shadow: beige;
   box-shadow: 10px 5px 5px lightslategray;
   box-sizing: border-box;
   align-items: center;
+  margin-bottom: 5%;
 }
 
-.cardimgcustom {
+.snowcardimgcustom {
   width: 100%;
   height: 70%;
   border-radius: 10px;
 }
 
-.cardtitlecustom {
+.snowcardtitlecustom {
   text-align: center;
   align-self: center;
-  box-shadow: 2px 3px 5px black;
-  border-radius: 10px;
+  /* box-shadow: 2px 3px 5px black;
+  border-radius: 10px; */
   padding: 5px;
 }
 
-.customCategorybu {
-  padding: 5%;
-  margin-top: 20%;
+.snowcardtitlecustomP {
+  text-align: center;
+  align-self: center;
+  /* box-shadow: 2px 3px 5px black;
+  border-radius: 10px; */
+  padding: 5px;
+  font-weight: bolder;
+  color: black;
+  box-shadow: 2px 3px 5px black;
 }

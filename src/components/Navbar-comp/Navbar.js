@@ -22,10 +22,13 @@ export default function Navbar() {
                   Home
                 </button>
               </Link>
+              <Link to={"/snowboardcategory/1"}>
+                {" "}
+                <button className="btn btn-outline-dark customlink">
+                  Snowboards
+                </button>
+              </Link>
 
-              <button className="btn btn-outline-dark customlink">
-                Snowboards
-              </button>
               <button className="btn btn-outline-dark customlink">Gear</button>
               <button className="btn btn-outline-dark customlink">
                 Clothes

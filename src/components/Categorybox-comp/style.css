@@ -1,5 +1,5 @@
 .cardcontainerflex {
   display: flex;
-  gap: 15%;
+  gap: 10%;
   padding: 30px;
 }

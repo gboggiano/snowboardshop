@@ -17,6 +17,8 @@ import { useEffect, useState } from "./Test/CustomHook-comp/useCounterHOC";
 import Apicards from "./Test/Apicards-comp/Apicards";
 import Headerchildren from "./components/Headerchildren-comp/Headerchildren";
 import Apicharacters from "./components/Apitest-comp/Apicharacters";
+import Snowcategory from "./components/SnowsubCategory-comp/Snowcategory";
+
 const welcomemessage = {
   message:
     "Welcome to Snowster, your online snowboarding store! We have the best snowboards, gear and clothing for you. Check out our blog for tips, reviews and news. Need help? Just ask us. Shop now and enjoy the snow! Thank you for choosing Snowster!",
@@ -72,7 +74,8 @@ function App() {
             element={<ItemlistContainer message={welcomemessage.message} />}
             exact
           />
-          <Route path="/contador2" element={<ItemcountHOC2 />} />
+          <Route path="/snowboardcategory/1" element={<Snowcategory />} exact />
+          <Route path="/snowboardcategory/2" element={<ItemcountHOC2 />} />
           <Route path="/cardsapi/" element={<Promisesapi />} />
           <Route path="/rmcharacters/:name" element={<Apicharacters />} />
         </Routes>

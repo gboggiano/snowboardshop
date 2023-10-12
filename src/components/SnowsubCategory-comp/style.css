@@ -1,0 +1,45 @@
+.snowcardcontainerflex {
+  display: flex;
+  gap: 10%;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.loadingtextSnow {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: antiquewhite;
+}
+
+.customLoadingbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.customImgloadingBox {
+  width: 50%;
+  border-radius: 20%;
+  padding: 20px;
+}
+
+.spinner {
+  border: 4px solid rgba(243, 5, 239, 0.807);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: rgb(247, 144, 0);
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -13,6 +13,7 @@
 }
 
 .navbarlogo {
+  width: 60%;
   display: flex;
   color: black;
   align-items: center;
