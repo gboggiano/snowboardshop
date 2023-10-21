@@ -11,7 +11,7 @@ export default function ProdcardBox({ prod }) {
       <img className="snowcardimgcustom" src={prod.image} alt={prod.title} />
       <h3 className="snowcardtitlecustom">{prod.title}</h3>
       <p className="snowcardtitlecustom"> {prod.brand}</p>
-      <p className="snowcardtitlecustomP"> {prod.price}</p>
+      <p className="snowcardtitlecustomP"> {prod.price + " USD"}</p>
       <Buttonone
         title="Add to Cart"
         className="btn btn-success"

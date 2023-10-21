@@ -1,0 +1,6 @@
+.gearcontainerflex {
+  display: flex;
+  gap: 10%;
+  padding: 30px;
+  flex-wrap: wrap;
+}

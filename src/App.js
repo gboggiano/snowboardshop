@@ -20,6 +20,7 @@ import Apicharacters from "./components/Apitest-comp/Apicharacters";
 import Snowcategory from "./components/SnowsubCategory-comp/Snowcategory";
 //--Context
 import ContextProvider from "./components/Contextprovider-comp/ContextProvider";
+import Gear from "./components/GearsubCategory-comp/Gear";
 
 const welcomemessage = {
   message:
@@ -71,6 +72,7 @@ function App() {
               exact
             />
             <Route path="/snowboardcategory/2" element={<ItemcountHOC2 />} />
+            <Route path="/snowboardcategory/3" element={<Gear />} />
             <Route path="/cardsapi/" element={<Promisesapi />} />
             <Route path="/rmcharacters/:name" element={<Apicharacters />} />
           </Routes>
