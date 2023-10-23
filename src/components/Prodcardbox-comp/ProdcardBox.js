@@ -6,6 +6,7 @@ import Buttonone from "../../Test/Button-one/Buttonone";
 
 export default function ProdcardBox({ prod }) {
   const { collection, setCollection, saveLS } = useContext(ContextCollection);
+
   return (
     <div className="snowcardscontainer">
       <img className="snowcardimgcustom" src={prod.image} alt={prod.title} />

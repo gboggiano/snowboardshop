@@ -1,3 +1,31 @@
 .customheader {
   background: linear-gradient(to right, #049790, #ca7d24);
 }
+
+.customimgfooter {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  background: linear-gradient(to right, #ca7d24, #049790);
+  gap: 15%;
+  padding: 30px;
+}
+
+.customfootimg {
+  width: 15%;
+  height: 250px;
+  border-radius: 5%;
+  box-shadow: -5px 2px 10px black;
+  padding: 5px;
+}
+
+.customulfooter {
+  display: inline-block;
+  color: black;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  align-self: flex-end;
+}

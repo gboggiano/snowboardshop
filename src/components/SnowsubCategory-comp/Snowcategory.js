@@ -1,19 +1,34 @@
 import React from "react";
 import "./style.css";
-import snowdata from "../items2.json";
 import { useState, useEffect } from "react";
 import ProdcardBox from "../Prodcardbox-comp/ProdcardBox";
 import brandlogo from "../../Assets/snlogo.jpeg";
+import { db } from "../..";
+import { collection, getDocs, where, query } from "firebase/firestore";
 
 export default function Snowcategory() {
-  const [items2, setItems2] = useState(snowdata.items2);
-
+  const [items2, setItems2] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const callFS2 = () => {
+    const itemCollection = query(
+      collection(db, "productos"),
+      where("type", "==", "board")
+    );
+    getDocs(itemCollection).then((res) => {
+      let item2 = res.docs.map((elm) => ({ ...elm.data() }));
+      setItems2(item2);
+    });
+  };
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
+  }, []);
+
+  useEffect(() => {
+    callFS2();
   }, []);
 
   return (
