@@ -1,0 +1,65 @@
+.navbarcontainer {
+  display: flex;
+  background-color: #049790;
+  width: 100%;
+  background: linear-gradient(to right, #049790, #ca7d24);
+}
+
+.navbarbox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 10px;
+}
+
+.navbarlogo {
+  width: 60%;
+  display: flex;
+  color: black;
+  align-items: center;
+  box-shadow: 4px 8px 9px rgb(69, 67, 67);
+  border-radius: 30px;
+  background: linear-gradient(to right, #1c162c, #176b87);
+  border: outset;
+  border-width: 2px;
+  border-color: darkcyan;
+}
+
+.customlinkbrand {
+  text-decoration: none;
+}
+
+.imgbrand {
+  width: 25%;
+  border-radius: 30%;
+}
+
+.navbarmenu {
+  display: flex;
+}
+
+.custombrandname {
+  color: #cacaca;
+  margin-left: 5%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  align-content: center;
+}
+
+.customlink {
+  box-shadow: 5px 5px 5px rgb(69, 67, 67);
+  font-weight: bold;
+  height: auto;
+}
+
+.cartWidgetfromCart {
+  align-self: right;
+  align-content: end;
+  text-align: end;
+  margin-left: 20%;
+}

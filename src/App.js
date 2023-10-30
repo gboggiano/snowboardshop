@@ -1,26 +1,13 @@
 // import logo from "./logo.svg";
-import React, { useContext } from "react";
 import "./App.css";
-import Navbar from "./components/Navbar-comp/Navbar";
-import ItemlistContainer from "./components/ItemlistCointainer-comp/ItemlistContainer";
-import Promises from "./Test/Promises-comp/Promises";
-import MainCardsli from "./Test/MainCardList/MainCardsli";
-import Promisesapi from "./Test/Promisesapi-comp/Promisesapi";
-import ContPa from "./Test/ContadorPadre/ContPa";
-import Itemcount from "./Test/Itemcount-comp/Itemcount";
-import { useCounter } from "./Test/CustomHook-comp/useCounter";
-import { useFetch } from "./Test/CustomHook-comp/useFetch";
-import { HOC } from "./Test/CustomHook-comp/HOC";
+import React from "react";
 import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
-import HeaderwithChildren from "./Test/HeaderwithChildren/HeaderwithChildren";
-import { useState } from "react";
-import Apicards from "./Test/Apicards-comp/Apicards";
-import Headerchildren from "./components/Headerchildren-comp/Headerchildren";
-import Apicharacters from "./components/Apitest-comp/Apicharacters";
-import Snowcategory from "./components/SnowsubCategory-comp/Snowcategory";
-//--Context
-import ContextProvider from "./components/Contextprovider-comp/ContextProvider";
-import Gear from "./components/GearsubCategory-comp/Gear";
+import HeaderwithChild from "./components/HeaderwithChildren_comp/HeaderwithChild";
+import ItemListCointaner from "./components/ItemlistCointainer_comp/ItemListCointaner";
+import SnowsubCat from "./components/SnowsubCatego_comp/SnowsubCat";
+import Clothes from "./components/ClothessubCatego_comp/Clothes";
+import Gearpro from "./components/GearsubCatego_comp/Gearpro";
+import { CartProvider } from "./context/CartContext";
 
 const welcomemessage = {
   message:
@@ -28,56 +15,23 @@ const welcomemessage = {
 };
 
 function App() {
-  //--Context -----------------//
-  // const Context = useContext(ContextCollection);
-
-  //--state (Global)- Context--//
-
-  //movido a ContextProvider.js
-
-  //--state - (Global) - Context--//
-
-  //--Context ------------------//
-
-  const productosA = [
-    {
-      titulo: "Iphone 15",
-      stock: 10,
-    },
-  ];
-
-  const counter1 = useCounter(productosA);
-  const counter2 = useCounter(productosA);
-
-  const ItemcountHOC1 = HOC(Itemcount, productosA, "Contador1");
-  const ItemcountHOC2 = HOC(
-    Itemcount,
-    productosA,
-    "Contador2 usando rerouting"
-  );
-
   return (
     <BrowserRouter>
-      <ContextProvider>
-        <Headerchildren>
+      <CartProvider>
+        <HeaderwithChild>
           <Routes>
             <Route
               path="/"
-              element={<ItemlistContainer message={welcomemessage.message} />}
-              exact
+              element={
+                <ItemListCointaner message={welcomemessage.message} exact />
+              }
             />
-            <Route
-              path="/snowboardcategory/1"
-              element={<Snowcategory />}
-              exact
-            />
-            <Route path="/snowboardcategory/2" element={<ItemcountHOC2 />} />
-            <Route path="/snowboardcategory/3" element={<Gear />} />
-            <Route path="/cardsapi/" element={<Promisesapi />} />
-            <Route path="/rmcharacters/:name" element={<Apicharacters />} />
+            <Route path="/category/1" element={<SnowsubCat exact />} />
+            <Route path="/category/3" element={<Clothes exact />} />
+            <Route path="/category/2" element={<Gearpro exact />} />
           </Routes>
-        </Headerchildren>
-      </ContextProvider>
+        </HeaderwithChild>
+      </CartProvider>
     </BrowserRouter>
   );
 }
