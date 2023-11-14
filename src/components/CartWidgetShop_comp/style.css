@@ -61,5 +61,5 @@
 .cart-button ~ input:checked ~ .cart {
   height: 100%;
   display: block;
-  background-color: snow;
+  background-color: rgb(222, 189, 127);
 }

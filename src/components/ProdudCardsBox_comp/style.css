@@ -42,6 +42,6 @@
 .buttononecustom {
   display: flex;
   flex-direction: column;
-  background-color: purple;
+  background-color: linear-gradient(to right, #049790, #ca7d24);
   color: red;
 }

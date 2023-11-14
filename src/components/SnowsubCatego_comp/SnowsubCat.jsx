@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { useState, useEffect } from "react";
-import brandlogo from "../../Assets/snlogo.jpeg";
+import brandlogo from "../../Assets/snlogo.png";
 import { db } from "../..";
 import { collection, getDocs, where, query } from "firebase/firestore";
 import ProdCardsbox from "../ProdudCardsBox_comp/ProdCardsbox";
