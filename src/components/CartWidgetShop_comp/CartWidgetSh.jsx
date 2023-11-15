@@ -3,6 +3,8 @@ import cartshop from "../../Assets//shoppingcart.png";
 import { useId } from "react";
 import "./style.css";
 import { useCart } from "../CustomHook-comp/useCart";
+import { useContext } from "react";
+import { Cartcontext } from "../../context/CartContext";
 
 function CartItem({
   title,
@@ -31,7 +33,7 @@ function CartItem({
 
 export default function CartWidgetSh() {
   const cartCheckboxId = useId();
-  const { cart, clearCart, addToCart } = useCart();
+  const { cart, clearCart, addToCart } = useContext(Cartcontext);
 
   return (
     <>
@@ -49,6 +51,7 @@ export default function CartWidgetSh() {
               {...product}
             />
           ))}
+
           <button onClick={clearCart}>Clear</button>
         </ul>
       </aside>

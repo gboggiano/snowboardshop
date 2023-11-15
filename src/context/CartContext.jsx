@@ -6,17 +6,17 @@ export const Cartcontext = createContext();
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
-  const addToCart = (product) => {
-    // setCart([...cart, product]);
-    const productInCartindex = cart.findIndex((item) => item.id == product.id);
+  const addToCart = (item) => {
+    const productInCartindex = cart.find((product) => product.id === item.id);
 
-    if (productInCartindex >= 0) {
-      const newCart = global.structuredClone(cart);
-      newCart[productInCartindex].quantity += 1;
-      return setCart(newCart);
+    console.log(item);
+
+    if (productInCartindex) {
+      productInCartindex.quantity += 1;
+      setCart([...cart]);
+    } else {
+      setCart((prevState) => [...prevState, { ...item, quantity: 1 }]);
     }
-
-    setCart((prevState) => [...prevState, { ...product, quantity: 1 }]);
   };
 
   const clearCart = () => {
@@ -28,3 +28,5 @@ export function CartProvider({ children }) {
     </Cartcontext.Provider>
   );
 }
+
+// setCart([...cart, product]);
