@@ -8,12 +8,15 @@ export function CartProvider({ children }) {
 
   const addToCart = (item) => {
     {
-      const productInCartindex = cart.find((product) => product.id === item.id);
+      const isInArray = cart.indexOf(item) !== -1;
 
       console.log(item);
 
-      if (productInCartindex) {
-        productInCartindex.quantity += 1;
+      if (isInArray) {
+        const productInCartindex = cart.filter(
+          (product) => product.title === item.title
+        );
+        productInCartindex[0].quantity += 1;
         setCart([...cart]);
       } else {
         setCart((prevState) => [...prevState, { ...item, quantity: 1 }]);
@@ -30,5 +33,3 @@ export function CartProvider({ children }) {
     </Cartcontext.Provider>
   );
 }
-
-// setCart([...cart, product]);
