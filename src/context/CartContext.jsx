@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 import React from "react";
 
 export const Cartcontext = createContext();
@@ -7,15 +7,17 @@ export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
   const addToCart = (item) => {
-    const productInCartindex = cart.find((product) => product.id === item.id);
+    {
+      const productInCartindex = cart.find((product) => product.id === item.id);
 
-    console.log(item);
+      console.log(item);
 
-    if (productInCartindex) {
-      productInCartindex.quantity += 1;
-      setCart([...cart]);
-    } else {
-      setCart((prevState) => [...prevState, { ...item, quantity: 1 }]);
+      if (productInCartindex) {
+        productInCartindex.quantity += 1;
+        setCart([...cart]);
+      } else {
+        setCart((prevState) => [...prevState, { ...item, quantity: 1 }]);
+      }
     }
   };
 

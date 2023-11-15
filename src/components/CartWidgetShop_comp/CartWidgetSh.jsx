@@ -58,3 +58,11 @@ export default function CartWidgetSh() {
     </>
   );
 }
+
+//  {cart.map((product) => (
+//     <CartItem
+//       key={product.id}
+//       addToCart={() => addToCart(product)}
+//       {...product}
+//     />
+//   ))}
