@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+E-commerce SPA (react)
+This project is a single page application (SPA) that simulates an e-commerce website for snowboard products, using React as the main framework. It showcases some of the common features and functionalities of a modern web application, such as:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+•  Responsive design using Bootstrap
 
-## Available Scripts
+•  Dynamic rendering of products from a JSON file
 
-In the project directory, you can run:
+•  Shopping cart management using Context API and custom hooks
 
-### `npm start`
+•  User authentication and data storage using Firebase
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+•  User feedback using Sweet Alert
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+•  Routing and navigation using React Router
 
-### `npm test`
+How to run it locally
+To run this project locally, you need to have Node.js and npm installed on your machine. Then, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+•  Clone this repository or download the zip file
 
-### `npm run build`
+•  Open a terminal and navigate to the project folder
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+•  Run npm install to install the dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+•  Run npm start to start the development server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+•  Open your browser and go to http://localhost:3000 to see the app
 
-### `npm run eject`
+How to see it online
+This project is also hosted online for academic/portfolio purposes, using InfinityFree as the hosting service. You can see it live at this URL:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+: [http://ecommerceprojectsnowboardrea.infinityfreeapp.com/]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+How to use it
+To use this project, you can do the following:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+•  Browse the products by category or search by name
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+•  Add products to your cart by clicking on the "Add to cart" button
 
-## Learn More
+•  View your cart by clicking on the cart icon on the top right corner
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+•  Modify the quantity of the products in your cart by clicking on the "+" or "-" buttons
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+•  Remove products from your cart by clicking on the "Clear" button
 
-### Code Splitting
+•  Finish your order by clicking on the "Finish your order" button
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+•  Enter your name, phone number and email address in the input fields
 
-### Analyzing the Bundle Size
+•  Click on the "Submit" button to send your data to Firebase and get a confirmation message with your tracking number
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+•  Sign in or sign up with your email and password by clicking on the "Sign in" or "Sign up" buttons on the top right corner
 
-### Making a Progressive Web App
+•  View your profile and sign out by clicking on the "Profile" or "Sign out" buttons on the top right corner
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Technologies used
+This project was created using the following technologies:
 
-### Advanced Configuration
+•  React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+•  Bootstrap
 
-### Deployment
+•  Firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+•  Sweet Alert
 
-### `npm run build` fails to minify
+•  React Router
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Credits
+This project was developed by me as a technical test for a potential employer. The design and layout were inspired by the following website:
+
+: [https://www.snowinn.com/]
+
+The products data were obtained from the following API:
+
+: [https://fakestoreapi.com/]
+
+The images were obtained from the following sources:
+
+: [https://unsplash.com/]
+: [https://www.pexels.com/]
