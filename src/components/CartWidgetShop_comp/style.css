@@ -6,11 +6,24 @@
   right: 0px;
   top: 0px;
   width: 400px;
+  align-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.cart ul {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.cart input {
+  background-color: lightgray;
+  border-radius: 7px;
 }
 
 .cart img {
   aspect-ratio: 16/9;
-  width: 100%;
+  width: 20%;
 }
 
 .customcartimage {
@@ -61,5 +74,5 @@
 .cart-button ~ input:checked ~ .cart {
   height: 100%;
   display: block;
-  background-color: rgb(222, 189, 127);
+  background-color: #199484;
 }
